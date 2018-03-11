@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+<form action="{{url_for('search_results')}}" method="GET">
+	{{ form.hidden_tag() }}
+	{{ form.search_term.label }} {{ form.search_term() }}
+  <br>
+	{{ form.location.label }} {{ form.location() }}
+	{{ form.submit() }}
+</form>
+</div>
+
+{% endblock %}

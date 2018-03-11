@@ -1,0 +1,21 @@
+<ul>
+  <li><a href="{{ url_for('home') }}">Home</a></li>
+  <li><a href="{{ url_for('all_names') }}">See all users</a></li>
+  <li><a href="{{ url_for('search') }}">Search for a restaurant</a></li>
+  <li><a href="{{ url_for('all_results') }}">See all search results</a></li>
+  <li><a href="{{ url_for('enter_review') }}">Enter a review</a></li>
+  <li><a href="{{ url_for('all_reviews') }}">See all reviews</a></li>
+</ul>
+
+{% block content %}
+
+<h1>Welcome!</h1>
+
+<form action="{{ url_for('home') }}" method="GET">
+    {{ form.name.label() }}{{ form.name() }}<br>
+    {{ form.submit() }}
+    {{ form.hidden_tag() }}
+</form>
+
+
+{% endblock %}

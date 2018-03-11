@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+<form method="POST" action='/enter_review'>
+	{{ form.hidden_tag() }}
+	{{ form.name.label }} {{ form.name() }}
+  <br>
+	{{ form.restaurantName.label }} {{ form.restaurantName() }}
+  <br>
+  {{ form.rating.label }} {{ form.rating() }}
+  <br>
+  {{ form.text.label }} {{ form.text() }}
+	{{ form.submit() }}
+</form>
+</div>
+
+{% endblock %}

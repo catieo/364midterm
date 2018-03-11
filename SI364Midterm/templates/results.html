@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+  {% for x in result_list %}
+  <li><strong>{{ x[0] }}</strong>: <br> <i>{{ x[1] }}</i> <br> Rating: {{ x[2] }} out of 5 stars<br> Pricing: {{ x[3] }}</li>
+  {% endfor %}
+</ul>
+
+<div>
+  <a href="{{ url_for('search') }}">Search again!</a>
+</div>
+
+{% endblock %}

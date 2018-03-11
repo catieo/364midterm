@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  {% if num_results == 0 %}
+  There are no search results yet!
+  {% endif %}
+</div>
+<ul>
+  {% for x in results %}
+  <li><strong>{{ x.name }}</strong>: <br> <i>{{ x.location }}</i> <br> Rating: {{ x.rating }} out of 5 stars<br> Pricing: {{ x.pricing }}</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

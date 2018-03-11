@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<ul>
+  {% for x in reviews %}
+  <li>{{ x.text }} <br> {{ x.reviewer_name }} reviewed {{ x.restaurant_name }} <br> {{ x.rating }} out of 5 stars </li>
+  {% endfor %}
+</ul>
+
+<div>
+  <a href="{{ url_for('enter_review') }}">Enter another review!</a>
+</div>
+
+{% endblock %}
