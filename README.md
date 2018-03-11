@@ -1,18 +1,24 @@
 # 364midterm
 
 Midterm Assignment for SI 364. <br>
-Catie Olson 
+Catie Olson <br>
 
-Requirements to complete for 1800 points (90%) -- an awesome, solid app
-(I recommend treating this as a checklist and checking things off as you get them done!)
+Requirements to complete for 1800 points (90%) -- an awesome, solid app <br>
 
-Documentation Requirements (so we can grade the assignments)
-Note: See To Submit for submission instructions.
-Create a README.md file for your app that includes the full list of requirements from this page. The ones you have completed should be bolded. (You bold things in Markdown by using two asterisks, like this: **This text would be bold** and this text would not be)
-The README.md file should include a list of all of the routes that exist in the app and the names of the templates each one should render (e.g. /form -> form.html, like the list we provided in the instructions for HW2).
-The README.md file should contain at least 1 line of description of what your app is about or should do.
-Code Requirements
-Note that many of these requirements go together!
+Documentation Requirements
+<br>
+<br>
+Routes <br>
+http://localhost:5000/ -> base.html <br>
+http://localhost:5000/names -> names.html <br>
+http://localhost:5000/search -> search.html <br> 
+http://localhost:5000/search_results -> results.html <br>
+http://localhost:5000/enter_review -> review_form.html <br>
+http://localhost:5000/reviews -> reviews.html <br>
+http://localhost:5000/all_results -> all_results.html <br>
+<br>
+
+Code Requirements <br>
 <br>
 **Ensure that the SI364midterm.py file has all the setup (app.config values, import statements, code to run the app if that file is run, etc) necessary to run the Flask application, and the application runs correctly on http://localhost:5000 (and the other routes you set up)** <br>
 **Add navigation in base.html with links (using a href tags) that lead to every other viewable page in the application.** <br>
