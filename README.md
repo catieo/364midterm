@@ -3,6 +3,8 @@
 Midterm Assignment for SI 364. <br>
 Catie Olson <br>
 
+An app that uses the Yelp API to search for restaurants, saves the results, allows users to leave reviews for the restaurant results, or read reviews that previous users have left. 
+<br><br>
 Requirements to complete for 1800 points (90%) -- an awesome, solid app <br>
 
 Documentation Requirements
